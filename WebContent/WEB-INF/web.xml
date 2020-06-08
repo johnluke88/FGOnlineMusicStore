@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<display-name>FGOnlineMusicStore</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+   		<welcome-file>index.htm</welcome-file>
+   		<welcome-file>index.jsp</welcome-file>
+   		<welcome-file>default.html</welcome-file>
+   		<welcome-file>default.htm</welcome-file>
+   		<welcome-file>default.jsp</welcome-file>
+ 	</welcome-file-list>
+  	<error-page>
+    	<location>/WEB-INF/jsp/error.jsp</location>
+  	</error-page>
+  	<error-page>
+    	<exception-type>controller.ExceptionServlet</exception-type>
+    	<location>/WEB-INF/jsp/exception.jsp</location>
+  	</error-page>
+  	<context-param> 
+		<description>Location to store uploaded file</description> 
+      	<param-name>file-upload-category</param-name> 
+      	<param-value>
+        		C:\\Users\\felic\\Desktop\\UNIVERSITA\\Secondo anno\\Secondo Semestre\\TSW\\Progetto Web\\img\\categorie
+      	</param-value> 
+   	</context-param>
+   	<context-param> 
+		<description>Location to store uploaded file</description> 
+      	<param-name>file-upload-product</param-name> 
+      	<param-value>
+        		C:\\Users\\felic\\Desktop\\UNIVERSITA\\Secondo anno\\Secondo Semestre\\TSW\\Progetto Web\\img\\prodotti
+      	</param-value> 
+   	</context-param>
+</web-app>
